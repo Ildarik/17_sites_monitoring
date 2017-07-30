@@ -3,7 +3,6 @@ from whois import whois
 from sys import argv
 from datetime import datetime
 
-# TODO freeze > requirements
 
 def load_urls4check(filepath):
     with open(filepath, "r") as textfile:
