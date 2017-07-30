@@ -26,5 +26,6 @@ if __name__ == '__main__':
         print(url)
         print('Отвечает на запрос статусом HTTP 200: ', is_server_respond_with_200(url))
         tdelta = get_domain_expiration_date(url) - datetime.now()
-        print('Доменное имя проплачено как минимум на 1 месяц вперед: ', tdelta.days > 30)
+        month_days = 30
+        print('Доменное имя проплачено как минимум на 1 месяц вперед: ', tdelta.days > month_days)
         print()
